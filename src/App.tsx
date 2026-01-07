@@ -71,6 +71,7 @@ function App() {
       <select
         value={continentFilter}
         onChange={(e) => setContinentFilter(e.target.value)}
+        //different continent disponibles
       >
         <option value="">Tous les continents</option>
         <option value="Europe">Europe</option>
