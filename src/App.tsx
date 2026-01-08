@@ -5,8 +5,13 @@ import { useState } from "react";
 type Country = {
   code: string;
   name: string;
-  continent: { name: string };
+  capital?: string;
+  currency?: string;
+  continent: {
+    name: string;
+  };
 };
+
 
 // Requête GraphQL
 const GET_COUNTRIES = gql`
@@ -14,6 +19,8 @@ const GET_COUNTRIES = gql`
     countries {
       code
       name
+      capital
+      currency
       continent {
         name
       }
@@ -21,7 +28,8 @@ const GET_COUNTRIES = gql`
   }
 `;
 
-// Mapping anglais → français pour l’affichage
+
+// Mapping anglais  français pour l’affichage comme demendé
 const continentMap: Record<string, string> = {
   "Africa": "Afrique",
   "Asia": "Asie",
@@ -79,23 +87,28 @@ function App() {
         ))}
       </select>
 
-      {/* Affichage du pays sélectionné en "card" */}
-      {selectedCountry && (
-        <div style={{
-          marginTop: 20,
-          border: "1px solid #ccc",
-          borderRadius: 8,
-          padding: 15,
-          maxWidth: 400,
-          backgroundColor: "#f9f9f9"
-        }}>
-          <h2>
-            {countryFlagEmoji(selectedCountry.code)} {selectedCountry.name}
-          </h2>
-          <p><strong>Code :</strong> {selectedCountry.code}</p>
-          <p><strong>Continent :</strong> {continentMap[selectedCountry.continent.name] || selectedCountry.continent.name}</p>
-        </div>
-      )}
+      {/* Affichage du pays sélectionné en "card"  */}
+   {selectedCountry && (
+  <div style={{ marginTop: 20, border: "1px solid #ccc", padding: 10 }}>
+    <h2>
+      {countryFlagEmoji(selectedCountry.code)} {selectedCountry.name}
+    </h2>
+
+    <p><strong>Code :</strong> {selectedCountry.code}</p>
+    <p><strong>Continent :</strong> {selectedCountry.continent.name}</p>
+
+    <p>
+      <strong>Capitale :</strong>{" "}
+      {selectedCountry.capital ?? "Non renseignée"}
+    </p>
+
+    <p>
+      <strong>Devise :</strong>{" "}
+      {selectedCountry.currency ?? "Non renseignée"}
+    </p>
+  </div>
+)}
+
 
       {/* Liste des pays */}
       <ul style={{ marginTop: 20, listStyle: "none", paddingLeft: 0 }}>
@@ -121,5 +134,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
