@@ -1,5 +1,6 @@
 import { gql, useQuery } from "@apollo/client";
 import { useState } from "react";
+import MalwareTable from "./MalwareTable";
 
 // Type des pays
 type Country = {
@@ -131,6 +132,9 @@ function App() {
           </li>
         ))}
       </ul>
+
+      {/* Tableau de synthèse cybersécurité – Malware */}
+      <MalwareTable />
     </div>
   );
 }
