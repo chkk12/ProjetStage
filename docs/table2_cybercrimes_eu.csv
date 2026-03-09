@@ -1,0 +1,30 @@
+Tableau 2 - Actualités Cybercriminalité dans l'UE,,,,,,,,,
+,,,,,,,,,
+=== INFORMATIONS SUR LA VIDEO ===,,,,,,,,,
+Champ,Valeur,,,,,,,,
+Titre,"Cybercriminalité : l'UE dégaine son bouclier | Arte Europe l'Hebdo",,,,,,,,
+Date de diffusion,[À COMPLÉTER],,,,,,,,
+Origine,[À COMPLÉTER — ex. Arte.tv / Arte Europe l'Hebdo / diffusion France-Allemagne],,,,,,,,
+Lien,[À COMPLÉTER],,,,,,,,
+Durée,[À COMPLÉTER],,,,,,,,
+,,,,,,,,,
+=== ATTAQUES ET INCIDENTS CYBERCRIMINELS MENTIONNES ===,,,,,,,,,
+#,Date de l'attaque,Pays / Zone attaqué(e),Personnes / Structures ciblées,Auteurs / Nationalité,Motifs,Procédure d'attaque,Conséquences directes,Conséquences indirectes,Solutions de prévention
+1,Mai 2017,"Mondial (dont UE : UK, France, Espagne, Allemagne…)","Hôpitaux (NHS Royaume-Uni), entreprises, administrations","Groupe Lazarus (Corée du Nord présumée)",Profit financier / sabotage,"Ransomware WannaCry exploitant la faille SMB EternalBlue (CVE-2017-0144) via email et réseau","Chiffrement de centaines de milliers de postes, perturbation du NHS, 300 $ de rançon par poste","~4 milliards $ de pertes mondiales, accélération du patch management","Application des correctifs Windows (MS17-010), désactivation de SMBv1, sauvegardes hors ligne, segmentation réseau"
+2,Juin 2017,"Ukraine, puis Europe (France, Danemark, Allemagne…)","Maersk, Saint-Gobain, gouvernement ukrainien","Sandworm / GRU (Russie présumée)",Sabotage géopolitique,"Ver destructeur NotPetya (wiper) via le logiciel comptable ukrainien M.E.Doc","Destruction irréversible de données, paralysie de Maersk, impossibilité de déchiffrement","~10 milliards $ de pertes, durcissement des exigences de cyber-résilience dans l'UE","Isolation des réseaux OT/IT, principe du moindre privilège, MFA, audits de la chaîne d'approvisionnement logicielle"
+3,2019–2021,"Allemagne, Belgique, Pays-Bas, France","Hôpitaux, collectivités locales, PME","Ryuk/Conti, affiliés russophones présumés",Profit financier (rançon),"Ransomware-as-a-Service : phishing → Emotet/TrickBot → déploiement de Ryuk","Chiffrement des données, arrêt des opérations hospitalières, rançons de plusieurs millions €","Perturbation des soins, pression sur les assureurs cyber, renforcement de NIS2","Formation anti-phishing, EDR, sauvegardes testées, plan de réponse aux incidents"
+4,Mars 2021,"UE et alliés (mondial)","Serveurs Microsoft Exchange (entreprises, gouvernements, ONG)","HAFNIUM (Chine présumée)","Espionnage, vol de données","Exploitation de 4 zero-day dans Microsoft Exchange (CVE-2021-26855/26857/26858/27065) → web shell","Accès non autorisé à des boîtes mail, installation de portes dérobées","Espionnage de masse, vol de propriété intellectuelle","Patching d'urgence, audit des serveurs Exchange, surveillance des web shells"
+5,Février 2022,"Ukraine, Allemagne, Europe centrale","Réseau satellite Viasat KA-SAT (éoliennes Enercon, armée ukrainienne)","Sandworm / GRU (Russie présumée)",Sabotage militaire,"Wiper AcidRain sur modems SATCOM, exploitation d'une mauvaise configuration VPN","Coupure de ~40 000 modems en Europe, perturbation de 5 800 éoliennes Enercon","Vulnérabilité des infrastructures satellitaires civiles, accélération du Cyber Resilience Act","Segmentation des réseaux SATCOM, authentification forte, coordination ENISA"
+6,2022–2024,"France, Allemagne, Italie, Espagne, Belgique","Hôpitaux (CHU de Corbeil-Essonnes, Versailles…), mairies, universités","LockBit, ALPHV/BlackCat, Clop (groupes ransomware)",Profit financier (double extorsion),"Spear phishing → latéralisation → exfiltration → chiffrement massif","Paralysie des établissements, fuite de données patients/citoyens, rançons","Pression réglementaire (RGPD, NIS2), coûts d'assurance cyber en hausse","NIS2, RGPD (notification 72h), EDR, formation, exercices de crise"
+7,Octobre 2023,"Europe (Allemagne, Pays-Bas, Belgique, France, Pologne)","Ports, aéroports, sites gouvernementaux","Killnet, NoName057(16) (hacktivistes pro-russes)",Hacktivisme pro-russe / déstabilisation,"Attaques DDoS massives sur des sites institutionnels","Indisponibilité temporaire de sites web gouvernementaux","Impact psychologique, coordination ENISA / CERT-EU renforcée","Scrubbing centers, plans de continuité d'activité, CERT-EU, coopération NIS2"
+8,[À COMPLÉTER],[À COMPLÉTER],[À COMPLÉTER],[À COMPLÉTER],[À COMPLÉTER],[À COMPLÉTER — préciser selon vidéo],[À COMPLÉTER],[À COMPLÉTER],[À COMPLÉTER]
+,,,,,,,,,
+=== MESURES ET INITIATIVES DE L'UE MENTIONNEES DANS LA VIDEO ===,,,,,,,,,
+Initiative / Mesure,Description,Source,,,,,,,,
+Directive NIS2 (Network and Information Security 2),"Élargit le champ d'application de NIS1, impose des obligations de sécurité renforcées et une notification des incidents sous 24h/72h. Entrée en vigueur : octobre 2024.",Recherche Internet,,,,,,,,
+Cyber Resilience Act (CRA),"Règlement imposant des exigences de cybersécurité pour les produits numériques mis sur le marché européen (IoT, logiciels…).",Recherche Internet,,,,,,,,
+ENISA,"Agence de l'UE pour la cybersécurité : coordonne la réponse aux incidents, publie l'ENISA Threat Landscape.",Recherche Internet,,,,,,,,
+CERT-EU,Équipe de réponse aux urgences informatiques pour les institutions de l'UE.,Recherche Internet,,,,,,,,
+Europol / EC3,"Centre européen de lutte contre la cybercriminalité, coordonne les enquêtes transnationales.",Recherche Internet,,,,,,,,
+[À COMPLÉTER — mesure citée dans la vidéo],[À COMPLÉTER],Vidéo Arte,,,,,,,,
+[À COMPLÉTER — mesure citée dans la vidéo],[À COMPLÉTER],Vidéo Arte,,,,,,,,
